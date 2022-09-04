@@ -1,15 +1,23 @@
 public class PipeLine {
 
     private String pipe;
+    private int position;
 
-    private int hola;
-    private String zapete = "Re zapete";
+    public int getPositon() {
+        return position;
+    }
+
+    public void setPositon(int positon) {
+        this.position = positon;
+    }
+
     public PipeLine(String pipe) {
         this.pipe = pipe;
 
     }
 
     public String getPipe() {
+
         return pipe;
     }
 
@@ -17,5 +25,5 @@ public class PipeLine {
         this.pipe = pipe;
     }
 
-    private String rata;
+
 }

@@ -3,11 +3,27 @@ public class Board {
 
     private Board left;
     private Board right;
-    private Board up;
-    private Board down;
+
     private PipeLine pipe;
+    private String image;
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
 
     private String pos;
+
+    public Board(PipeLine pipe, String pos,String image) {
+        this.pipe = pipe;
+        this.pos = pos;
+        this.image = image;
+    }
+
+
 
     public String getPos() {
         return pos;
@@ -33,21 +49,6 @@ public class Board {
         this.right = right;
     }
 
-    public Board getUp() {
-        return up;
-    }
-
-    public void setUp(Board up) {
-        this.up = up;
-    }
-
-    public Board getDown() {
-        return down;
-    }
-
-    public void setDown(Board down) {
-        this.down = down;
-    }
 
     public PipeLine getPipe() {
         return pipe;

@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09c05609-07ac-4cad-b011-c959e9da64cf" name="Changes" comment="" />
+    <list default="true" id="09c05609-07ac-4cad-b011-c959e9da64cf" name="Changes" comment="Prueba">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PipeLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PipeLine.java" afterDir="false" />
+    </list>
+    <list id="98faa981-607f-4ec8-aec7-48487faa89b2" name="Changes by LuisPi" comment="" />
+    <list id="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" name="Changes by Luispi" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PipeLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PipeLine.java" afterDir="false" />
+    </list>
+    <list id="a5c37d93-2e89-4041-b718-3bfd8e6dc529" name="Changes by pinil" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +30,36 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/Main.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="2" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="3" end1="4" start2="5" end2="40" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="6" end1="6" start2="42" end2="87" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/Game.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="2" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="6" end1="6" start2="8" end2="11" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="8" end1="9" start2="13" end2="20" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="10" end1="17" start2="21" end2="29" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="18" end1="19" start2="30" end2="32" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="20" end1="25" start2="33" end2="34" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="27" end1="28" start2="36" end2="96" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="30" end1="30" start2="98" end2="107" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/PipeLine.java">
+      <ranges>
+        <range start1="3" end1="3" start2="3" end2="8" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="4" end1="6" start2="9" end2="13" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="12" end1="12" start2="19" end2="20" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="16" end1="16" start2="24" end2="25" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="19" end1="20" start2="28" end2="29" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -30,7 +73,9 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -42,7 +87,24 @@
       <option name="presentableId" value="Default" />
       <updated>1662167700430</updated>
       <workItem from="1662167701752" duration="3768000" />
+      <workItem from="1662306870418" duration="112000" />
+      <workItem from="1662306993980" duration="8133000" />
     </task>
+    <task id="LOCAL-00001" summary="Prueba">
+      <created>1662306281839</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662306281839</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Prueba">
+      <created>1662306439666</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662306439666</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -53,10 +115,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Prueba" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prueba" />
   </component>
 </project>
