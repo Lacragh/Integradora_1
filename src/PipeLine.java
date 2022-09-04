@@ -1,7 +1,9 @@
 public class PipeLine {
 
     private String pipe;
+
     private int hola;
+    private String zapete = "Re zapete";
     public PipeLine(String pipe) {
         this.pipe = pipe;
 
@@ -15,5 +17,5 @@ public class PipeLine {
         this.pipe = pipe;
     }
 
-
+    private String rata;
 }
