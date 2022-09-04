@@ -1,8 +1,7 @@
 public class PipeLine {
 
     private String pipe;
-
-
+    private int hola;
     public PipeLine(String pipe) {
         this.pipe = pipe;
 
