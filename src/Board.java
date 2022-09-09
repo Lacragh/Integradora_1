@@ -1,8 +1,17 @@
 public class Board {
 
 
-    private Board left;
+
     private Board right;
+    private int repeat;
+
+    public int getRepeat() {
+        return repeat;
+    }
+
+    public void setRepeat(int repeat) {
+        this.repeat = repeat;
+    }
 
     private PipeLine pipe;
     private String image;
@@ -33,13 +42,6 @@ public class Board {
         this.pos = pos;
     }
 
-    public Board getLeft() {
-        return left;
-    }
-
-    public void setLeft(Board left) {
-        this.left = left;
-    }
 
     public Board getRight() {
         return right;

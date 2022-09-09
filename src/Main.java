@@ -1,8 +1,10 @@
 public class Main {
 
+    public static Game controller;
+    public static Scanner reader;
     public static void main(String[] args) {
-        Game controller = new Game();
-        Scanner reader = new Scanner(System.in);
+        controller = new Game();
+        reader = new Scanner(System.in);
         int exit = 0;
         System.out.println("Bienvenido al mejor juego del mundo!");
         while (exit == 0) {
@@ -21,7 +23,7 @@ public class Main {
                     nickname = reader.nextLine();
 
                     //metodo para impresion del tablero
-                    controller.print();
+                    board();
                     //Empieza juego
                     startedGame();
                     break;
@@ -35,6 +37,13 @@ public class Main {
 
         }
 
+
+    }
+
+    public static void board(){
+        System.out.println("🤍🧡🤍🧡🤍🧡🤍🧡🤍");
+        System.out.print("🧡");controller.print();
+        System.out.println("🧡🤍🧡🤍🧡🤍🧡🤍🧡");
 
     }
 

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09c05609-07ac-4cad-b011-c959e9da64cf" name="Changes" comment="Prueba">
+    <list default="true" id="09c05609-07ac-4cad-b011-c959e9da64cf" name="Changes" comment="Se imprime, coloca tuberia, estructura enlazada, imprime tablero">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PipeLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PipeLine.java" afterDir="false" />
     </list>
-    <list id="98faa981-607f-4ec8-aec7-48487faa89b2" name="Changes by LuisPi" comment="" />
     <list id="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" name="Changes by Luispi" comment="">
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PipeLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PipeLine.java" afterDir="false" />
     </list>
+    <list id="98faa981-607f-4ec8-aec7-48487faa89b2" name="Changes by LuisPi" comment="" />
     <list id="a5c37d93-2e89-4041-b718-3bfd8e6dc529" name="Changes by pinil" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,32 +31,49 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/Main.java">
-      <ranges>
-        <range start1="0" end1="0" start2="0" end2="2" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="3" end1="4" start2="5" end2="40" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="6" end1="6" start2="42" end2="87" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-      </ranges>
-    </file>
     <file path="$PROJECT_DIR$/src/Game.java">
       <ranges>
-        <range start1="0" end1="0" start2="0" end2="2" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="6" end1="6" start2="8" end2="11" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="8" end1="9" start2="13" end2="20" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="10" end1="17" start2="21" end2="29" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="18" end1="19" start2="30" end2="32" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="20" end1="25" start2="33" end2="34" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="27" end1="28" start2="36" end2="96" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="30" end1="30" start2="98" end2="107" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="0" end1="0" start2="0" end2="2" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="1" end1="2" start2="3" end2="4" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="4" end1="5" start2="6" end2="7" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="7" end1="7" start2="9" end2="10" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="15" end1="15" start2="18" end2="19" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="16" end1="17" start2="20" end2="22" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="31" end1="32" start2="36" end2="38" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="35" end1="35" start2="41" end2="42" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="50" end1="51" start2="57" end2="58" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="54" end1="55" start2="61" end2="62" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="56" end1="56" start2="63" end2="64" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="62" end1="63" start2="70" end2="71" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="66" end1="69" start2="74" end2="86" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="70" end1="70" start2="87" end2="88" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="71" end1="72" start2="89" end2="90" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="73" end1="73" start2="91" end2="237" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="75" end1="77" start2="239" end2="240" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="78" end1="79" start2="241" end2="242" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="80" end1="85" start2="243" end2="251" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="86" end1="92" start2="252" end2="258" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="93" end1="94" start2="259" end2="262" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="95" end1="96" start2="263" end2="264" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="99" end1="99" start2="267" end2="272" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
       </ranges>
     </file>
     <file path="$PROJECT_DIR$/src/PipeLine.java">
       <ranges>
-        <range start1="3" end1="3" start2="3" end2="8" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="4" end1="6" start2="9" end2="13" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="12" end1="12" start2="19" end2="20" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="16" end1="16" start2="24" end2="25" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="19" end1="20" start2="28" end2="29" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="3" end1="4" start2="3" end2="13" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="5" end1="7" start2="14" end2="16" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="9" end1="11" start2="18" end2="20" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="24" end1="24" start2="33" end2="34" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/Main.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="3" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="2" end1="2" start2="5" end2="7" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="3" end1="5" start2="8" end2="10" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="23" end1="24" start2="28" end2="29" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="39" end1="39" start2="44" end2="51" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="40" end1="40" start2="52" end2="97" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
       </ranges>
     </file>
   </component>
@@ -75,9 +92,24 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Integradora 1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -88,7 +120,15 @@
       <updated>1662167700430</updated>
       <workItem from="1662167701752" duration="3768000" />
       <workItem from="1662306870418" duration="112000" />
-      <workItem from="1662306993980" duration="8133000" />
+      <workItem from="1662306993980" duration="9445000" />
+      <workItem from="1662321251849" duration="640000" />
+      <workItem from="1662322039643" duration="2558000" />
+      <workItem from="1662386862457" duration="797000" />
+      <workItem from="1662478963717" duration="619000" />
+      <workItem from="1662600626623" duration="9225000" />
+      <workItem from="1662639926088" duration="14697000" />
+      <workItem from="1662733290425" duration="1976000" />
+      <workItem from="1662759549543" duration="2576000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <created>1662306281839</created>
@@ -104,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662306439666</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Se imprime, coloca tuberia, estructura enlazada, imprime tablero">
+      <created>1662315316223</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662315316223</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +182,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Prueba" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prueba" />
+    <MESSAGE value="Se imprime, coloca tuberia, estructura enlazada, imprime tablero" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se imprime, coloca tuberia, estructura enlazada, imprime tablero" />
   </component>
 </project>

@@ -1,14 +1,23 @@
 public class PipeLine {
 
     private String pipe;
-    private int position;
+    private PipeLine next;
+    private PipeLine previous;
 
-    public int getPositon() {
-        return position;
+    public PipeLine getNext() {
+        return next;
     }
 
-    public void setPositon(int positon) {
-        this.position = positon;
+    public void setNext(PipeLine next) {
+        this.next = next;
+    }
+
+    public PipeLine getPrevious() {
+        return previous;
+    }
+
+    public void setPrevious(PipeLine previous) {
+        this.previous = previous;
     }
 
     public PipeLine(String pipe) {
