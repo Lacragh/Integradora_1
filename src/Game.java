@@ -1,10 +1,13 @@
+import java.nio.channels.Pipe;
 import java.util.Random;
 
 public class Game {
 
     private Board head;
     private Board tail;
-    private int h = 0;
+
+    private PipeLine headPipe;
+
 
     public Game() {
 
@@ -103,7 +106,7 @@ public class Game {
         }
                 if (((fila)+","+(columna)).equals(current.getPos())){
                     i = 0;
-                    System.out.println("BIEN");
+
                     return current;
                 }
 
@@ -121,71 +124,118 @@ public class Game {
     public void simulate(){
 
         simulate(head,head,0,0);
+        verificatePipeLine(headPipe);
     }
 
-    public String comprobar(Board temp){
-        int fila = Character.getNumericValue(temp.getPos().charAt(0));
-        int columna = Character.getNumericValue(temp.getPos().charAt(2));
-        // Ganar
-        if(searchPipe(fila-1,columna,head,1).getImage().equals("D")){
-            System.out.println("Ganaste");
-        }else
-        if(searchPipe(fila+1,columna,head,1).getImage().equals("D")){
-            System.out.println("Ganaste");
-        }else
-        if(searchPipe(fila,columna-1,head,1).getImage().equals("D")){
-            System.out.println("Ganaste");
-        }else
-        if(searchPipe(fila,columna+1,head,1).getImage().equals("D")){
-            System.out.println("Ganaste");
-        }else{
-           return "Perdiste";
+
+
+
+    public void addLastPipe(PipeLine input) {
+        if (this.headPipe == null) {
+            this.headPipe = input;
+            this.headPipe .setNext(input);
+            this.headPipe .setPrevious(input);
+        } else {
+            PipeLine tail = this.headPipe.getPrevious();
+            tail.setNext(input);
+            input.setNext(this.headPipe );
+            this.headPipe.setPrevious(input);
+            input.setPrevious(tail);
         }
 
-        return null;
-
-
     }
 
 
-    private void simulate(Board current,Board temp,int fila,int column){
-
+    private Board simulate(Board current,Board temp,int fila,int column){
+        boolean stop = true;
         // TUBERIAS DOBLEMENTE ENLAZADA
         if(current.getImage().equals("F")){
              fila =  Character.getNumericValue(temp.getPos().charAt(0));
              column = Character.getNumericValue(temp.getPos().charAt(2));
-             comprobar(temp);
+
+
+             //VALIDACION PARA GANAR
+            if(searchPipe(fila-1,column,head,1) != null){
+                if(searchPipe(fila-1,column,head,1).getImage().equals("D")){
+                    System.out.println("Me agrega la D");
+                    PipeLine pipe = new PipeLine(searchPipe(fila-1,column,head,1).getPipe().getPipe());
+                    addLastPipe(pipe);
+                    return null;
+                }
+            }
+
+            if(searchPipe(fila+1,column,head,1) !=null){
+                if(searchPipe(fila+1,column,head,1).getImage().equals("D")){
+                    System.out.println("Me agrega la D");
+                    PipeLine pipe = new PipeLine(searchPipe(fila+1,column,head,1).getPipe().getPipe());
+                    addLastPipe(pipe);
+                    return null;
+                }
+            }
+
+            if(searchPipe(fila,column-1,head,1) != null){
+                if(searchPipe(fila,column-1,head,1).getImage().equals("D")){
+                    System.out.println("Me agrega la D");
+                    PipeLine pipe = new PipeLine(searchPipe(fila,column-1,head,1).getPipe().getPipe());
+                    addLastPipe(pipe);
+                    return null;
+                }
+            }
+
+            if(searchPipe(fila,column+1,head,1) != null){
+                if(searchPipe(fila,column+1,head,1).getImage().equals("D")){
+                    System.out.println("ME AGREGA LA D");
+                    PipeLine pipe = new PipeLine(searchPipe(fila,column+1,head,1).getPipe().getPipe());
+                    addLastPipe(pipe);
+                    return null;
+                }
+            }
+
              // Validacion arriba
             if(searchPipe(fila-1,column,head,1) != null){
                 if(searchPipe(fila-1,column,head,1).getImage().equals("||") && searchPipe(fila-1,column,head,1).getRepeat() == 0){ // Aqui seria agregar una Y YA SE REPITIO PARA EVITAR QUE SE REPITA LA MISMA TUBERIA Y EL TEMP PASE A LA OTRA
-                    System.out.println(searchPipe(fila-1,column,head,1).getImage());
+                    System.out.println("ME METE || HACIA ARRIBA A LA LISTA");
                     temp = searchPipe(fila-1,column,head,1);
+                    PipeLine pipe = new PipeLine(temp.getPipe().getPipe());
+                    addLastPipe(pipe);
                     temp.setRepeat(1);
-
+                    return simulate(current,temp,fila,column);
                 }
             }
 
             // Validacion abajo
             if(searchPipe(fila+1,column,head,1) != null){
                 if(searchPipe(fila+1,column,head,1).getImage().equals("||") && searchPipe(fila+1,column,head,1).getRepeat() == 0){
+                    System.out.println("ME METE || HACIA ABAJO A LA LISTA");
                     temp = searchPipe(fila+1,column,head,1);
+                    PipeLine pipe = new PipeLine(temp.getPipe().getPipe());
+                    addLastPipe(pipe);
                     temp.setRepeat(1);
+                    return simulate(current,temp,fila,column);
                 }
             }
 
             // Validacion derecha
             if(searchPipe(fila,column+1,head,1) != null){
                 if(searchPipe(fila,column+1,head,1).getImage().equals("=") && searchPipe(fila,column+1,head,1).getRepeat() == 0){
+                    System.out.println("ME METE = HACIA DERECHA A LA LISTA");
                     temp = searchPipe(fila,column+1,head,1);
+                    PipeLine pipe = new PipeLine(temp.getPipe().getPipe());
+                    addLastPipe(pipe);
                     temp.setRepeat(1);
+                   return  simulate(current,temp,fila,column);
                 }
             }
 
             //Validacion izquierda
             if(searchPipe(fila,column-1,head,1) != null){
                 if(searchPipe(fila,column-1,head,1).getImage().equals("=") && searchPipe(fila,column-1,head,1).getRepeat() == 0){
+                    System.out.println("ME METE = HACIA IZQUIEDA A LA LISTA");
                     temp = searchPipe(fila,column-1,head,1);
+                    PipeLine pipe = new PipeLine(temp.getPipe().getPipe());
+                    addLastPipe(pipe);
                     temp.setRepeat(1);
+                    return simulate(current,temp,fila,column);
                 }
             }
 
@@ -194,37 +244,86 @@ public class Game {
             if(searchPipe(fila-1,column,head,1) != null){
                 if(searchPipe(fila-1,column,head,1).getImage().equals("o") && searchPipe(fila-1,column,head,1).getRepeat() == 0){ // Aqui seria agregar una Y YA SE REPITIO PARA EVITAR QUE SE REPITA LA MISMA TUBERIA Y EL TEMP PASE A LA OTRA
                     temp = searchPipe(fila-1,column,head,1);
+                    PipeLine pipe = new PipeLine(temp.getPipe().getPipe());
+                    addLastPipe(pipe);
                     temp.setRepeat(1);
+                    return simulate(current,temp,fila,column);
                 }
             }
 
             // Validacion abajo
             if (searchPipe(fila+1,column,head,1) != null){
                 if(searchPipe(fila+1,column,head,1).getImage().equals("o") && searchPipe(fila+1,column,head,1).getRepeat() == 0){
+                    System.out.println("ME METE BOLITA HACIA ARRIBA A LA LISTA");
                     temp = searchPipe(fila+1,column,head,1);
+                    PipeLine pipe = new PipeLine(temp.getPipe().getPipe());
+                    addLastPipe(pipe);
                     temp.setRepeat(1);
+                    return simulate(current,temp,fila,column);
                 }
             }
 
             // Validacion derecha
-            if(searchPipe(fila,column+1,head,1).getImage().equals("o") && searchPipe(fila,column+1,head,1).getRepeat() == 0){
-                temp = searchPipe(fila,column+1,head,1);
-                temp.setRepeat(1);
+            if(searchPipe(fila,column+1,head,1) !=null){
+                if(searchPipe(fila,column+1,head,1).getImage().equals("o") && searchPipe(fila,column+1,head,1).getRepeat() == 0){
+                    System.out.println("ME METE BOLITA HACIA derecha A LA LISTA");
+                    temp = searchPipe(fila,column+1,head,1);
+                    PipeLine pipe = new PipeLine(temp.getPipe().getPipe());
+                    addLastPipe(pipe);
+                    temp.setRepeat(1);
+                    return simulate(current,temp,fila,column);
+                }
             }
+
             //Validacion izquierda
-            if(searchPipe(fila,column-1,head,1).getImage().equals("o") && searchPipe(fila,column-1,head,1).getRepeat() == 0){
-                temp = searchPipe(fila,column-1,head,1);
-                temp.setRepeat(1);
+            if (searchPipe(fila,column-1,head,1) != null){
+                if(searchPipe(fila,column-1,head,1).getImage().equals("o") && searchPipe(fila,column-1,head,1).getRepeat() == 0){
+                    System.out.println("ME METE BOLITA HACIA IZQUIERDA A LA LISTA");
+                    temp = searchPipe(fila,column-1,head,1);
+                    PipeLine pipe = new PipeLine(temp.getPipe().getPipe());
+                    addLastPipe(pipe);
+                    temp.setRepeat(1);
+                    return simulate(current,temp,fila,column);
+                }
             }
+
             //////////////////////////////////// AHORA BIEN NECESITAMOS UNA FORMA DE PARAR EL ALGORITMO PARA CUANDO NO HAY INGUNA TUBERIA ALREDEDOR EN ESE MOMENTO PIERDE
+            if(searchPipe(fila-1,column,head,1) != null){
+                if(searchPipe(fila-1,column,head,1).getImage().equals("X") ){ // Aqui seria agregar una Y YA SE REPITIO PARA EVITAR QUE SE REPITA LA MISMA TUBERIA Y EL TEMP PASE A LA OTRA
+                    stop = false;
+                }
+            }
+
+            // Validacion abajo
+            if (searchPipe(fila+1,column,head,1) != null){
+                if(searchPipe(fila+1,column,head,1).getImage().equals("X")){
+                    stop = false;
+                }
+            }
+
+            // Validacion derecha
+            if(searchPipe(fila,column+1,head,1) !=null){
+                if(searchPipe(fila,column+1,head,1).getImage().equals("X")){
+                   stop = false;
+                }
+            }
+
+            //Validacion izquierda
+            if (searchPipe(fila,column-1,head,1) != null){
+                if(searchPipe(fila,column-1,head,1).getImage().equals("X")){
+                    stop = false;
+                }
+            }
 
 
 
 
             ///////////////////////////RECURSION
 
-            System.out.println(temp.getImage());
-            simulate(current,temp,fila,column);
+            if (stop == false){
+                System.out.println("PERDISTE");
+            }
+
 
 
         }else{
@@ -233,6 +332,87 @@ public class Game {
 
 
 
+        return null;
+    }
+
+    public PipeLine printPIPELINES(PipeLine current){
+        if (current == headPipe.getPrevious()){
+            System.out.println("LO ANTERIOR A LA CABEZA");
+            System.out.println(current.getPipe());
+            System.out.println("CABEZA");
+            System.out.println(current.getNext().getPipe());
+            return null;
+        }
+        System.out.println(current.getPipe());
+        return printPIPELINES(current.getNext());
+    }
+
+
+    public PipeLine verificatePipeLine(PipeLine current){
+        System.out.println("ENTRO AL METODO DE VERICACION");
+
+        // validacion si gano
+        printPIPELINES(headPipe);
+        if(current.getPipe().equals("=") | current.getPipe().equals("o") | current.getPipe().equals("||")){
+            if (current.getNext().getPipe().equals("D")){
+                System.out.println("Ganaste");
+
+            }
+        }
+
+        // Para tuberias de arriba o abajo
+        if(current.getPipe().equals("||")){
+            if(current.getNext().equals("||")){
+                System.out.println("ENTRO EN LA VERIFICAION BUCLE");
+                 return verificatePipeLine(current.getNext());
+            }
+
+            if(current.getNext().getPipe().equals("o")){
+                System.out.println("ENTRO EN LA VERIFICAION BUCLE");
+               return verificatePipeLine(current.getNext());
+            }
+
+
+        }
+
+        // Para tuberias de izqueirda o derecha
+        if(current.getPipe().equals("=")){
+
+            if(current.getNext().getPipe().equals("=")){
+                System.out.println("ENTRO EN LA VERIFICAION BUCLE");
+                 return verificatePipeLine(current.getNext());
+            }
+
+            if(current.getNext().getPipe().equals("o")){
+                System.out.println("ENTRO EN LA VERIFICAION BUCLE");
+                 return verificatePipeLine(current.getNext());
+            }
+
+        }
+        // Para tuberias de bolitas
+        if(current.getPipe().equals("o")){
+
+            if(current.getNext().getPipe().equals("||")){
+                System.out.println("ENTRO EN LA VERIFICAION BUCLE");
+                 return verificatePipeLine(current.getNext());
+            }
+
+            if(current.getNext().getPipe().equals("=")){
+                System.out.println("ENTRO EN LA VERIFICAION BUCLE");
+               return verificatePipeLine(current.getNext());
+            }
+
+        }
+
+        if(current.getNext().getPipe().equals("D")){
+            System.out.println("Ganaste");
+        }else{
+            System.out.println(current.getPipe());
+            System.out.println(current.getNext().getPipe());
+            System.out.println("Perdiste mero malito");
+        }
+
+        return null;
     }
 
 
