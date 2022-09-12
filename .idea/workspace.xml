@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09c05609-07ac-4cad-b011-c959e9da64cf" name="Changes" comment="Algoritmo de simular agua 60% terminado ( solo falta validar si la lista enlazada de las tuberias esta correcta )">
+    <list default="true" id="09c05609-07ac-4cad-b011-c959e9da64cf" name="Changes" comment="Algoritmo simular agua Completado">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_09_2022_10_40_a__m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_09_2022_10_40_a_ m__[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
     </list>
+    <list id="98faa981-607f-4ec8-aec7-48487faa89b2" name="Changes by LuisPi" comment="" />
     <list id="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" name="Changes by Luispi" comment="">
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PipeLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PipeLine.java" afterDir="false" />
     </list>
-    <list id="98faa981-607f-4ec8-aec7-48487faa89b2" name="Changes by LuisPi" comment="" />
     <list id="a5c37d93-2e89-4041-b718-3bfd8e6dc529" name="Changes by pinil" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,48 +32,16 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/src/Game.java">
       <ranges>
-        <range start1="0" end1="0" start2="0" end2="1" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="3" end1="4" start2="4" end2="5" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="6" end1="7" start2="7" end2="10" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="36" end1="37" start2="39" end2="41" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="105" end1="106" start2="109" end2="110" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="123" end1="123" start2="127" end2="128" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="125" end1="142" start2="130" end2="144" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="144" end1="147" start2="146" end2="146" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="150" end1="152" start2="149" end2="151" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="156" end1="157" start2="155" end2="194" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="160" end1="161" start2="197" end2="198" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="162" end1="162" start2="199" end2="201" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="163" end1="164" start2="202" end2="203" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="170" end1="170" start2="209" end2="210" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="171" end1="171" start2="211" end2="213" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="172" end1="172" start2="214" end2="215" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="178" end1="178" start2="221" end2="222" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="179" end1="179" start2="223" end2="225" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="180" end1="180" start2="226" end2="227" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="186" end1="186" start2="233" end2="234" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="187" end1="187" start2="235" end2="237" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="188" end1="188" start2="238" end2="239" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="196" end1="196" start2="247" end2="249" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="197" end1="197" start2="250" end2="251" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="203" end1="203" start2="257" end2="258" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="204" end1="204" start2="259" end2="261" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="205" end1="205" start2="262" end2="263" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="209" end1="212" start2="267" end2="276" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="213" end1="213" start2="277" end2="278" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="214" end1="217" start2="279" end2="288" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="218" end1="218" start2="289" end2="290" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="219" end1="219" start2="291" end2="317" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="225" end1="227" start2="323" end2="327" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="235" end1="235" start2="335" end2="336" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="236" end1="236" start2="337" end2="417" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="238" end1="240" start2="419" end2="420" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="241" end1="242" start2="421" end2="422" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="243" end1="248" start2="423" end2="432" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="249" end1="255" start2="433" end2="440" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="256" end1="257" start2="441" end2="444" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="258" end1="259" start2="445" end2="446" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="262" end1="262" start2="449" end2="454" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="4" end1="5" start2="4" end2="5" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="39" end1="40" start2="39" end2="41" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="96" end1="98" start2="97" end2="97" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="418" end1="420" start2="417" end2="418" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="421" end1="422" start2="419" end2="420" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="423" end1="428" start2="421" end2="430" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="429" end1="435" start2="431" end2="438" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="436" end1="437" start2="439" end2="442" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="438" end1="439" start2="443" end2="444" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="442" end1="442" start2="447" end2="452" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
       </ranges>
     </file>
   </component>
@@ -128,7 +98,10 @@
       <workItem from="1662733290425" duration="1976000" />
       <workItem from="1662759549543" duration="3803000" />
       <workItem from="1662826364897" duration="12408000" />
-      <workItem from="1662857033734" duration="1175000" />
+      <workItem from="1662857033734" duration="1966000" />
+      <workItem from="1662942739296" duration="29000" />
+      <workItem from="1662992041706" duration="41000" />
+      <workItem from="1662992354027" duration="1295000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <created>1662306281839</created>
@@ -158,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662762199501</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Algoritmo simular agua Completado">
+      <created>1662860280145</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662860280145</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +171,7 @@
     <MESSAGE value="Prueba" />
     <MESSAGE value="Se imprime, coloca tuberia, estructura enlazada, imprime tablero" />
     <MESSAGE value="Algoritmo de simular agua 60% terminado ( solo falta validar si la lista enlazada de las tuberias esta correcta )" />
-    <option name="LAST_COMMIT_MESSAGE" value="Algoritmo de simular agua 60% terminado ( solo falta validar si la lista enlazada de las tuberias esta correcta )" />
+    <MESSAGE value="Algoritmo simular agua Completado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Algoritmo simular agua Completado" />
   </component>
 </project>

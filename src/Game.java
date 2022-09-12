@@ -96,8 +96,6 @@ public class Game {
 
 
 
-
-
     public Board searchPipe(int fila, int columna,Board current,int i){
 
 
