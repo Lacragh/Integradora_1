@@ -31,6 +31,7 @@ public class PipeLine {
     }
 
     public void setPipe(String pipe) {
+
         this.pipe = pipe;
     }
 

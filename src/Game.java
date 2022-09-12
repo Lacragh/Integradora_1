@@ -2,7 +2,7 @@ import java.nio.channels.Pipe;
 import java.util.Random;
 
 public class Game {
-
+    Random rd = new Random();
     private Board head;
     private Board tail;
 
@@ -37,7 +37,8 @@ public class Game {
                 }
             }
         }
-        setRandomFont_Drain(head,row,column,row1,column1,0);
+        setRandomFont_Drain(head, row, column, row1, column1, 0);
+
     }
 
     public void search(String goal, PipeLine pipe) {
@@ -414,25 +415,36 @@ public class Game {
     }
 
 
+    public void setRandomFont_Drain(Board current, int row, int column, int row1, int column1, int c) {
 
-    public void setRandomFont_Drain(Board current,int row,int column,int row1,int column1,int c) {
-
-        if (c == 2){
+        if (c == 2) {
             return;
-        }else{
-            if (current.getPos().equals((row) + "," +(column))) {
-                current.setPos("F");
-                c++;
+        } else {
+
+            if (current != null){
+
+                if (current.getPos().equals((row) + "," + (column))) {
+                    current.setImage("F");
+                    current.setPipe(new PipeLine("F"));
+                    c++;
+                }
+
+                if (current.getPos().equals((row1) + "," + (column1))) {
+                    current.setImage("D");
+                    current.setPipe(new PipeLine("D"));
+                    c++;
+                }
+                setRandomFont_Drain(current.getRight(), row, column, row1, column1, c);
             }
 
-            if (current.getPos().equals((row) + "," +(column))) {
-                current.setPos("D");
-                c++;
-            }
-            setRandomFont_Drain(current.getRight(),row,column,row1,column1,c);
+
+
         }
 
     }
+
+
+
 
 }
 

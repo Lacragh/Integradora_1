@@ -1,3 +1,6 @@
+import java.util.Scanner;
+
+
 public class Main {
 
     public static Game controller;
@@ -47,6 +50,51 @@ public class Main {
 
     }
 
+    public static void startedGame() {
+
+        int exit2 = 0;
+
+        while (exit2 == 0) {
+            System.out.println("\n**********🤯PIPELINE🤯************");
+            System.out.println("* 1. Poner tubería🤩             *");
+            System.out.println("* 2. Simular🧐                   *");
+            System.out.println("* 3. Salir🥱                     *");
+            System.out.println("**********************************\n");
+            int choice2 = reader.nextInt();
+
+            switch (choice2) {
+                case 1:
+                    board();
+                    System.out.println("Ingrese la posicion en la que desea colocar la tubería\n");
+                    System.out.println("Coloque fila y columna, así -> (0,7)\n");
+                    String row_column = reader.next();
+
+                    System.out.println("Ingrese el tipo de tubería que desea colocar");
+                    System.out.println("Existen 3 tipos de tuberia:\n1. = (tubería horizontal)\n2. || (Tubería vertical)\n3. o " +
+                            "(Cambio de 90 grados\nDigite la tubería que desee (=,||,o)");
+                    String pipeLine = reader.next();
+
+                    while (!pipeLine.equals("o") && !pipeLine.equals("=") && !pipeLine.equals("||")) {
+                        System.out.println("ERROR, por favor ingrese una tubería valida!\n");
+                        pipeLine = reader.next();
+                    }
+
+                    //metodo para asignar la tuberia a la posicion elegida
+                    controller.search(row_column, new PipeLine(pipeLine));
+                    controller.print();
+                    break;
+                case 2:
+
+                    controller.simulate();
+                    break;
+                case 3:
+                    System.out.println("Gracias por jugar el mejor juego del mundo");
+                    System.out.println("Inviertan para parte 2!🦕💲");
+                    exit2++;
+                    break;
+            }
+        }
+    }
 
 
 }
