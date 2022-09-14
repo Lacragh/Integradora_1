@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09c05609-07ac-4cad-b011-c959e9da64cf" name="Changes" comment="Algoritmo simular agua Completado">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_09_2022_10_40_a__m___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_09_2022_10_40_a_ m__[Changes]/shelved.patch" beforeDir="false" />
+    <list default="true" id="09c05609-07ac-4cad-b011-c959e9da64cf" name="Changes" comment="Main completado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
     </list>
     <list id="98faa981-607f-4ec8-aec7-48487faa89b2" name="Changes by LuisPi" comment="" />
-    <list id="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" name="Changes by Luispi" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PipeLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PipeLine.java" afterDir="false" />
-    </list>
+    <list id="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" name="Changes by Luispi" comment="Cambios" />
     <list id="a5c37d93-2e89-4041-b718-3bfd8e6dc529" name="Changes by pinil" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,22 +21,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/Game.java">
-      <ranges>
-        <range start1="4" end1="5" start2="4" end2="5" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="39" end1="40" start2="39" end2="41" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="96" end1="98" start2="97" end2="97" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
-        <range start1="418" end1="420" start2="417" end2="418" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="421" end1="422" start2="419" end2="420" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="423" end1="428" start2="421" end2="430" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="429" end1="435" start2="431" end2="438" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="436" end1="437" start2="439" end2="442" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="438" end1="439" start2="443" end2="444" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-        <range start1="442" end1="442" start2="447" end2="452" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -101,7 +78,9 @@
       <workItem from="1662857033734" duration="1966000" />
       <workItem from="1662942739296" duration="29000" />
       <workItem from="1662992041706" duration="41000" />
-      <workItem from="1662992354027" duration="1295000" />
+      <workItem from="1662992354027" duration="1939000" />
+      <workItem from="1663103386434" duration="607000" />
+      <workItem from="1663113698497" duration="1208000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <created>1662306281839</created>
@@ -138,7 +117,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662860280145</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Main completado">
+      <created>1663009506411</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663009506411</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Cambios">
+      <created>1663009595114</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663009595114</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +165,19 @@
     <MESSAGE value="Se imprime, coloca tuberia, estructura enlazada, imprime tablero" />
     <MESSAGE value="Algoritmo de simular agua 60% terminado ( solo falta validar si la lista enlazada de las tuberias esta correcta )" />
     <MESSAGE value="Algoritmo simular agua Completado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Algoritmo simular agua Completado" />
+    <MESSAGE value="Main completado" />
+    <MESSAGE value="Cambios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Game.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
