@@ -3,12 +3,12 @@ package Model;
 public class Player {
 
     private String name;
-    private double score;
+    private int score;
 
     private Player right;
     private Player left;
 
-    public Player(String name, double score) {
+    public Player(String name, int score) {
         this.name = name;
         this.score = score;
     }
@@ -41,7 +41,7 @@ public class Player {
         return score;
     }
 
-    public void setScore(double score) {
+    public void setScore(int score) {
         this.score = score;
     }
 }

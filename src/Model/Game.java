@@ -114,6 +114,13 @@ public class Game {
         print(current.getRight(), i + 1, r);
     }
 
+    public Board resetRepeat(Board current){
+        if (current == null){
+            return null;
+        }
+        current.setRepeat(0);
+        return resetRepeat(current.getRight());
+    }
 
     public Board searchPipe(int fila, int columna, Board current, int i) {
 
@@ -141,11 +148,13 @@ public class Game {
         simulate(head, head, 0, 0);
         boolean stop = true;
         if (verificatePipeLine(headPipe)) {
-                System.out.println("🧠¡GANASTE!🧠");
-                headPipe = null;
-                return stop;
+            System.out.println("🧠¡GANASTE!🧠");
+            headPipe = null;
+            return stop;
         } else {
             System.out.println("Perdiste🥱Zzzz");
+            resetRepeat(head);
+            printPipeline(headPipe);
             headPipe = null;
             return !stop;
         }
@@ -172,7 +181,6 @@ public class Game {
         boolean stop = true;
         // TUBERIAS DOBLEMENTE ENLAZADA
         if (current.getImage().equals("F")) {
-            System.out.println("ENTRO DE NUEVO");
             fila = Character.getNumericValue(temp.getPos().charAt(0));
             column = Character.getNumericValue(temp.getPos().charAt(2));
 
@@ -247,6 +255,7 @@ public class Game {
             if (searchPipe(fila, column - 1, head, 1) != null) {
                 if (searchPipe(fila, column - 1, head, 1).getImage().equals("=") && searchPipe(fila, column - 1, head, 1).getRepeat() == 0) {
                     temp = searchPipe(fila, column - 1, head, 1);
+                    System.out.println("CUCARACHA");
                     PipeLine pipe = new PipeLine(temp.getPipe().getPipe());
                     addLastPipe(pipe);
                     temp.setRepeat(1);
@@ -270,6 +279,7 @@ public class Game {
             if (searchPipe(fila + 1, column, head, 1) != null) {
                 if (searchPipe(fila + 1, column, head, 1).getImage().equals("o") && searchPipe(fila + 1, column, head, 1).getRepeat() == 0) {
                     temp = searchPipe(fila + 1, column, head, 1);
+                    System.out.println("CUCARACHA");
                     PipeLine pipe = new PipeLine(temp.getPipe().getPipe());
                     addLastPipe(pipe);
                     temp.setRepeat(1);
@@ -281,6 +291,7 @@ public class Game {
             if (searchPipe(fila, column + 1, head, 1) != null) {
                 if (searchPipe(fila, column + 1, head, 1).getImage().equals("o") && searchPipe(fila, column + 1, head, 1).getRepeat() == 0) {
                     temp = searchPipe(fila, column + 1, head, 1);
+                    System.out.println("CUCARACHA");
                     PipeLine pipe = new PipeLine(temp.getPipe().getPipe());
                     addLastPipe(pipe);
                     temp.setRepeat(1);
@@ -292,6 +303,7 @@ public class Game {
             if (searchPipe(fila, column - 1, head, 1) != null) {
                 if (searchPipe(fila, column - 1, head, 1).getImage().equals("o") && searchPipe(fila, column - 1, head, 1).getRepeat() == 0) {
                     temp = searchPipe(fila, column - 1, head, 1);
+                    System.out.println("CUCARACHA");
                     PipeLine pipe = new PipeLine(temp.getPipe().getPipe());
                     addLastPipe(pipe);
                     temp.setRepeat(1);
@@ -301,7 +313,8 @@ public class Game {
 
 
             if (searchPipe(fila - 1, column, head, 1) != null) {
-                if (searchPipe(fila - 1, column, head, 1).getImage().equals("X")) {                   stop = false;
+                if (searchPipe(fila - 1, column, head, 1).getImage().equals("X")) {
+                    stop = false;
                 }
             }
 
@@ -327,7 +340,7 @@ public class Game {
             }
 
 
-            ///////////////////////////RECURSION
+            //RECURSION
 
             if (!stop) {
                 return null;
@@ -344,16 +357,19 @@ public class Game {
         if (current == null) {
             return false;
         }
-        if (current == headPipe.getPrevious()) {
-            if (current.getPipe().equals("D")) {
-                return true;
+        if (headPipe != null){
+            if (current == headPipe.getPrevious()) {
+                if (current.getPipe().equals("D")) {
+                    return true;
+                } else {
+                    return false;
+                }
             } else {
-                return false;
+                return verificateD(current.getNext());
             }
-        } else {
-            return verificateD(current.getNext());
         }
 
+        return false;
     }
 
 
@@ -414,7 +430,7 @@ public class Game {
 
             }
 
-        }else{
+        } else {
             return false;
         }
         return false;
@@ -457,13 +473,17 @@ public class Game {
     }
 
     public PipeLine printPipeline(PipeLine current) {
-
-        if (current == headPipe.getPrevious()) {
-            System.out.println(current.getPipe());
-            return null;
+        if (headPipe != null){
+            if (current == headPipe.getPrevious()) {
+                System.out.println(current.getPipe());
+                return null;
+            }else{
+                System.out.println(current.getPipe());
+                return printPipeline(current.getNext());
+            }
         }
-        System.out.println(current.getPipe());
-        return printPipeline(current.getNext());
+
+       return null;
     }
 
 }

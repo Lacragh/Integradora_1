@@ -4,6 +4,10 @@ import Model.*;
 
 import java.util.Scanner;
 
+/*
+Luis Fernando Pinillos Sanchez | A00381323
+Victor Manuel Garzon Meneses | A00381962
+ */
 public class Main {
     public static Long start, end;
 
@@ -19,7 +23,7 @@ public class Main {
         int exit = 0;
         System.out.println("Bienvenido al mejor juego del mundo!");
         while (exit == 0) {
-            System.out.println("\n**********🤯PIPELINE🤯**********");
+            System.out.println("\n**********🤯PIPELINE🤯************");
             System.out.println("* 1. Nueva partida🥶             *");
             System.out.println("* 2. Ver puntaje🕹️               *");
             System.out.println("* 3. Salir🥱                     *");
@@ -111,7 +115,7 @@ public class Main {
 
                         double seconds = (double) totalNanoTime / 1000000000;
 
-                        double points = (controller.getPipeCount() * 100) - ((60 - seconds) * 10);
+                        int points = (int) ((controller.getPipeCount() * 100) - ((60 - seconds) * 10));
                         scoreboard.insert(new Player(nickname, points));
                     } else {
                         System.out.println("Mala colocación de tuberias, sigue intentando!");
@@ -124,10 +128,11 @@ public class Main {
                     end = System.nanoTime();
 
                     long totalNanoTime = end - start;
-
+                    System.out.println(totalNanoTime);
                     double seconds = (double) totalNanoTime / 1000000000;
-
-                    double points = (controller.getPipeCount() * 100) - ((60 - seconds) * 10);
+                    System.out.println(seconds);
+                    System.out.println(controller.getPipeCount());
+                    int points = (int) ((controller.getPipeCount() * 100) - ((60 - seconds) * 10));
                     scoreboard.insert(new Player(nickname, points));
                     break;
                 default:

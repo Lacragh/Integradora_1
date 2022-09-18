@@ -19,7 +19,7 @@ public class ABB {
         System.out.println("|----------------------------------------------|");
         System.out.println("|Jugador         Puntos                        |");
         System.out.println("|----------------------------------------------|");
-        System.out.println("|" + current.getName() + ": " + current.getScore() + "                       |");
+        System.out.println("|" + current.getName() + ":    " + current.getScore());
         print(current.getLeft(), n);
     }
 
