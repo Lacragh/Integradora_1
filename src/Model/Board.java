@@ -1,5 +1,6 @@
-public class Board {
+package Model;
 
+public class Board {
 
 
     private Board right;
@@ -26,12 +27,11 @@ public class Board {
 
     private String pos;
 
-    public Board(PipeLine pipe, String pos,String image) {
+    public Board(PipeLine pipe, String pos, String image) {
         this.pipe = pipe;
         this.pos = pos;
         this.image = image;
     }
-
 
 
     public String getPos() {

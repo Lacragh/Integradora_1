@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09c05609-07ac-4cad-b011-c959e9da64cf" name="Changes" comment="Main completado">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/ABB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PipeLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PipeLine.java" afterDir="false" />
     </list>
     <list id="98faa981-607f-4ec8-aec7-48487faa89b2" name="Changes by LuisPi" comment="" />
-    <list id="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" name="Changes by Luispi" comment="Cambios" />
+    <list id="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" name="Changes by Luispi" comment="Cambios">
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main.java" afterDir="false" />
+    </list>
     <list id="a5c37d93-2e89-4041-b718-3bfd8e6dc529" name="Changes by pinil" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +31,32 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/UI/Main.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="4" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="4" end1="4" start2="8" end2="9" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="5" end1="5" start2="10" end2="11" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="7" end1="7" start2="13" end2="16" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="8" end1="9" start2="17" end2="18" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="13" end1="14" start2="22" end2="22" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="23" end1="23" start2="31" end2="33" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="24" end1="25" start2="34" end2="35" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="33" end1="33" start2="43" end2="45" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="38" end1="38" start2="50" end2="52" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="45" end1="46" start2="59" end2="60" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="47" end1="48" start2="61" end2="63" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="70" end1="75" start2="85" end2="93" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="76" end1="80" start2="94" end2="98" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="81" end1="84" start2="99" end2="105" changelist="09c05609-07ac-4cad-b011-c959e9da64cf" />
+        <range start1="86" end1="86" start2="107" end2="112" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="87" end1="88" start2="113" end2="113" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="90" end1="91" start2="115" end2="116" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="93" end1="93" start2="118" end2="126" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+        <range start1="94" end1="94" start2="127" end2="130" changelist="b682846a-3b5b-4a43-ac2f-1bb607e9e0e5" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -35,15 +70,17 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pante/Downloads/APO2-222-main/Test/IntroTesting&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
 }</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="UI.Main" />
       <module name="Integradora 1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -81,6 +118,13 @@
       <workItem from="1662992354027" duration="1939000" />
       <workItem from="1663103386434" duration="607000" />
       <workItem from="1663113698497" duration="1208000" />
+      <workItem from="1663120987757" duration="626000" />
+      <workItem from="1663162787484" duration="20000" />
+      <workItem from="1663182820365" duration="2594000" />
+      <workItem from="1663200569878" duration="10400000" />
+      <workItem from="1663248198884" duration="1797000" />
+      <workItem from="1663329923675" duration="739000" />
+      <workItem from="1663360056887" duration="6469000" />
     </task>
     <task id="LOCAL-00001" summary="Prueba">
       <created>1662306281839</created>
@@ -168,16 +212,5 @@
     <MESSAGE value="Main completado" />
     <MESSAGE value="Cambios" />
     <option name="LAST_COMMIT_MESSAGE" value="Cambios" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Game.java</url>
-          <line>132</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
