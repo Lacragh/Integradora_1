@@ -255,7 +255,7 @@ public class Game {
             if (searchPipe(fila, column - 1, head, 1) != null) {
                 if (searchPipe(fila, column - 1, head, 1).getImage().equals("=") && searchPipe(fila, column - 1, head, 1).getRepeat() == 0) {
                     temp = searchPipe(fila, column - 1, head, 1);
-                   
+                    System.out.println("CUCARACHA");
                     PipeLine pipe = new PipeLine(temp.getPipe().getPipe());
                     addLastPipe(pipe);
                     temp.setRepeat(1);
@@ -279,7 +279,7 @@ public class Game {
             if (searchPipe(fila + 1, column, head, 1) != null) {
                 if (searchPipe(fila + 1, column, head, 1).getImage().equals("o") && searchPipe(fila + 1, column, head, 1).getRepeat() == 0) {
                     temp = searchPipe(fila + 1, column, head, 1);
-                    
+                    System.out.println("CUCARACHA");
                     PipeLine pipe = new PipeLine(temp.getPipe().getPipe());
                     addLastPipe(pipe);
                     temp.setRepeat(1);
@@ -291,7 +291,7 @@ public class Game {
             if (searchPipe(fila, column + 1, head, 1) != null) {
                 if (searchPipe(fila, column + 1, head, 1).getImage().equals("o") && searchPipe(fila, column + 1, head, 1).getRepeat() == 0) {
                     temp = searchPipe(fila, column + 1, head, 1);
-                   
+                    System.out.println("CUCARACHA");
                     PipeLine pipe = new PipeLine(temp.getPipe().getPipe());
                     addLastPipe(pipe);
                     temp.setRepeat(1);
@@ -303,7 +303,7 @@ public class Game {
             if (searchPipe(fila, column - 1, head, 1) != null) {
                 if (searchPipe(fila, column - 1, head, 1).getImage().equals("o") && searchPipe(fila, column - 1, head, 1).getRepeat() == 0) {
                     temp = searchPipe(fila, column - 1, head, 1);
-                  
+                    System.out.println("CUCARACHA");
                     PipeLine pipe = new PipeLine(temp.getPipe().getPipe());
                     addLastPipe(pipe);
                     temp.setRepeat(1);
